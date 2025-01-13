@@ -31,9 +31,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/your-username/your-repo/">
-    <img src="https://github.com/your-username/your-repo/blob/main/src/assets/img/logo.png" alt="Logo">
+    <img src="https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/showcase1.png" alt="Logo">
   </a>
-
 
   <h3 align="center">Custom Theme for Batocera, RetroBat & EmulationStation</h3>
 
