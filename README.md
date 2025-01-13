@@ -116,7 +116,7 @@ This repository contains a custom theme designed specifically for Batocera, Retr
 
 | Showcase 4                                                   | Showcase 5                                                   | Showcase 6                                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Showcase 4](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase4.png) | ![Showcase 5](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase5.png) | ![Showcase 4]() |
+| ![Showcase 4](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase4.png) | ![Showcase 5](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase5.png) | ![Showcase 4](https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/Coming-Soon.png) |
 
 
 <p align="right">
