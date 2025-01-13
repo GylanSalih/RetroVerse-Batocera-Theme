@@ -108,9 +108,10 @@ This repository contains a custom theme designed specifically for Batocera, Retr
 
 ## Gallery
 
-| Website Portfolio ( In Progress )                            | Coming Soon                                                  | Ebay Gaming Scraper & Analyse                                |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Portfolio](https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/showcase2.png) | ![Showcase](https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/showcase3.png) | ![Showcase](https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/showcase4.png) | ![Showcase](https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/showcase.png) |
+| Website Portfolio (In Progress)                             | Coming Soon                                                 | Ebay Gaming Scraper & Analyse                                |
+| ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ |
+| ![Portfolio](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase2.png) | ![Showcase](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase3.png) | ![Showcase](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase4.png) |
+| ![Showcase](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase.png) | ![Showcase](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase5.png) | |
 
 
 
