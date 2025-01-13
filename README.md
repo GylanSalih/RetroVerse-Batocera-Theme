@@ -108,10 +108,11 @@ This repository contains a custom theme designed specifically for Batocera, Retr
 
 ## Gallery
 
-| Website Portfolio (In Progress)                             | Coming Soon                                                 | Ebay Gaming Scraper & Analyse                                |
-| ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ |
-| ![Showcase 1](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase2.png) | ![Showcase 2](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase3.png) |
-| ![Showcase 3](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase.png) | ![Showcase 4](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase5.png) | |
+| Showcase 1                                                   | Showcase 2                                                   | Showcase 3                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Showcase 1](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase1.png) | ![Showcase 2](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase2.png) | ![Showcase 3](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase3.png) |
+| Showcase 4                                                   | Showcase 5                                                   |                                                              |
+| ![Showcase 4](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase4.png) | ![Showcase 5](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase5.png) |                                                              |
 
 
 
