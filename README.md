@@ -110,8 +110,8 @@ This repository contains a custom theme designed specifically for Batocera, Retr
 
 | Website Portfolio (In Progress)                             | Coming Soon                                                 | Ebay Gaming Scraper & Analyse                                |
 | ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ |
-| ![Portfolio](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase2.png) | ![Showcase](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase3.png) | ![Showcase](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase4.png) |
-| ![Showcase](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase.png) | ![Showcase](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase5.png) | |
+| ![Showcase 1](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase2.png) | ![Showcase 2](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase3.png) |
+| ![Showcase 3](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase.png) | ![Showcase 4](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase5.png) | |
 
 
 
