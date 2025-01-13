@@ -1,0 +1,10 @@
+<view name="screensaver">
+    <background>
+        <path>./_inc/assets/background.png</path> <!-- Optionaler statischer Hintergrund -->
+    </background>
+    <video>
+        <path>./_inc/assets/videos/tekken3intro.mp4</path> <!-- Pfad zum Video -->
+        <size x="0.1" y="0.1" w="0.8" h="0.8"/> <!-- Größe und Position des Videos -->
+        <loop>true</loop>
+    </video>
+</view>
