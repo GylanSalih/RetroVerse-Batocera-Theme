@@ -108,7 +108,11 @@ This repository contains a custom theme designed specifically for Batocera, Retr
 
 ## Gallery
 
-Gallery content will be added soon!
+| Website Portfolio ( In Progress )                            | Coming Soon                                                  | Ebay Gaming Scraper & Analyse                                |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Portfolio](https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/showcase2.png) | ![Showcase](https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/showcase3.png) | ![Showcase](https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/showcase4.png) | ![Showcase](https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/showcase.png) |
+
+
 
 <p align="right">
   <a href="#readme-top">
