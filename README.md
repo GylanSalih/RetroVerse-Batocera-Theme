@@ -110,11 +110,11 @@ This repository contains a custom theme designed specifically for Batocera, Retr
 
 ## Galerie 1: Showcase 1–3
 
-| Showcase 1                                                   | Showcase 2                                                   | Showcase 3                                                   |
+| Home View                                                    | Diffrent Image                                               | Boxes + Info View                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![dasdas](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase1.png) | ![Showcase 2](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase2.png) | ![Showcase 3](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase3.png) |
+| ![Showcase 1](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase1.png) | ![Showcase 2](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase2.png) | ![Showcase 3](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase3.png) |
 
-| Showcase 4                                                   | Showcase 5                                                   | Showcase 6                                                   |
+| Tiles View                                                   | Horizontal View                                              | Coming Soon :)                                               |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![Showcase 4](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase4.png) | ![Showcase 5](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase5.png) | ![Showcase 4](https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/Coming-Soon.png) |
 
