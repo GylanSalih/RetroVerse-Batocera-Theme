@@ -31,9 +31,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/your-username/your-repo/">
-    <img src="https://github.com/your-username/your-repo/blob/main/src/assets/img/logo.png" alt="Logo">
+    <img src="https://github.com/GylanSalih/RetroVerse-Batocera-Theme/blob/main/Github%20Gallery%20Showcase/showcase1.png" alt="Logo">
   </a>
-
 
   <h3 align="center">Custom Theme for Batocera, RetroBat & EmulationStation</h3>
 
@@ -109,7 +108,16 @@ This repository contains a custom theme designed specifically for Batocera, Retr
 
 ## Gallery
 
-Gallery content will be added soon!
+## Galerie 1: Showcase 1–3
+
+| Showcase 1                                                   | Showcase 2                                                   | Showcase 3                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Showcase 1](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase1.png) | ![Showcase 2](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase2.png) | ![Showcase 3](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase3.png) |
+
+| Showcase 4                                                   | Showcase 5                                                   | Showcase 6                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Showcase 4](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase4.png) | ![Showcase 5](https://raw.githubusercontent.com/GylanSalih/RetroVerse-Batocera-Theme/main/Github%20Gallery%20Showcase/showcase5.png) | ![Showcase 4]() |
+
 
 <p align="right">
   <a href="#readme-top">
