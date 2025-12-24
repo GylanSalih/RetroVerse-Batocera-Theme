@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+theme name:     Jiggi Emulator
+author:         Jiggi
+version:    	1.0
+System      	Jiggi Emulator
+GitHub:      	https://github.com/GylanSalih
+-->
+
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="splash">
+		<splash name="splash">
+			<backgroundColor>000000FF</backgroundColor>
+		</splash>
+		
+		<image name="logo" extra="true">
+			<pos>-2 -2</pos>
+			<size>0 0</size>
+		</image>
+		
+		<image name="background">
+			<pos>-2 -2</pos>
+			<size>0 0</size>
+		</image>
+		
+		<image name="progressbar">
+			<pos>-2 -2</pos>
+			<size>0 0</size>
+			<color>00000000</color>
+		</image>
+		
+		<text name="label">
+			<color>00000000</color>
+			<fontSize>0</fontSize>
+			<pos>-2 -2</pos>
+		</text>
+	</view>
+
+</theme>

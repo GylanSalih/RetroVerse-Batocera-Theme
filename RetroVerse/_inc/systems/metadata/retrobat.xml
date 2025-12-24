@@ -1,0 +1,34 @@
+<theme>
+<formatVersion>4</formatVersion>
+
+
+<view name="basic, detailed, video, grid">
+  <text name="nameLabel" extra="true">
+    <text>RetroBat</text>
+  </text>
+</view>    
+
+<view name="system">
+  <text name="sys_line1" extra="true">
+    <text>Emulation</text>
+    <fontSize>0.048</fontSize>
+    <origin>0 0</origin>
+    <pos>0.12 0.142</pos>
+    <size>0 0</size>
+  </text>
+  <text name="sys_line2" extra="true">
+    <text>RetroBat</text>
+    <fontSize>0.18</fontSize>
+    <origin>0 0</origin>
+    <pos>0.12 0.16</pos>
+    <size>0 0</size>
+</text>
+  <text name="shortdescription" extra="true">
+   <text>All-in-One Emulation Platform</text>
+  </text>
+  <text name="longdescription" extra="true">
+   <text>RetroBat is an all-in-one emulation platform that unifies all major emulators and retro systems. From classic consoles to arcade systems, handhelds, and modern platforms.</text>
+  </text>
+ </view>
+</theme>
+
