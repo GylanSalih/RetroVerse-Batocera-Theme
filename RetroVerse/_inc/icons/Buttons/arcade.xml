@@ -1,0 +1,21 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	
+	<view name="menu, system, detailed, gamecarousel, grid">
+		<helpsystem name="help">
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./_inc/icons/Buttons/arcade/updown.png</iconUpDown>
+			<iconLeftRight>./_inc/icons/Buttons/arcade/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./_inc/icons/Buttons/arcade/all.png</iconUpDownLeftRight>
+			<iconA>./_inc/icons/Buttons/arcade/a.png</iconA>
+			<iconB>./_inc/icons/Buttons/arcade/b.png</iconB>
+			<iconX>./_inc/icons/Buttons/arcade/x.png</iconX>
+			<iconY>./_inc/icons/Buttons/arcade/y.png</iconY>
+			<iconL>./_inc/icons/Buttons/arcade/l.png</iconL>
+			<iconR>./_inc/icons/Buttons/arcade/r.png</iconR>
+			<iconStart>./_inc/icons/Buttons/arcade/start.png</iconStart>
+			<iconSelect>./_inc/icons/Buttons/arcade/select.png</iconSelect>
+		</helpsystem>		
+	</view>
+
+</theme>

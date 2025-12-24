@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    
+    <view name="system">
+        <!-- carousel design - Default mit Rotation -->
+        <carousel name="systemcarousel">
+            <type>vertical_wheel</type>
+            <pos>0.32 -0.20</pos>
+            <size>1.125 1.38</size>
+            <logoScale>1.50</logoScale>
+            <logoSize>0.1 0.1</logoSize>
+            <color>00000000</color>
+            <logoRotation>-7.5</logoRotation>
+            <logoRotationOrigin>5.0 0.3</logoRotationOrigin>
+            <logoAlignment>center</logoAlignment>
+            <maxLogoCount>70</maxLogoCount>
+            <defaultTransition>fade</defaultTransition>
+            <zIndex>75</zIndex>
+            <systemInfoDelay>0</systemInfoDelay>
+            <scrollSound>./_inc/assets/sounds/scroll1A.wav</scrollSound>
+            <image name="logo" path="./_art/logos/systemLogo.png" />
+        </carousel>
+    </view>
+</theme>

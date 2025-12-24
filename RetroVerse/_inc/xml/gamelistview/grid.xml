@@ -1,107 +1,142 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
-	
-	<variables>
-		<corners>8 * ${screen.height} / 1080</corners>
-		<borderFrame>${themePath}/art/framewsel.png</borderFrame>
-		<grid.itemspacing.px>12 * ${screen.height} / 1080</grid.itemspacing.px>
-		<grid.paddingtop>0.04</grid.paddingtop>
-	</variables>
-	
+
+	<!--  Grid boxen design der einzelnen spiele properties   -->
+
 	<view name="grid">
-	
+
+		<!-- Scanlines komplett deaktivieren = drecks linien über dem bild -->
+		<image name="scanlines" extra="true">
+			<path/>
+		</image>
+
+		<!-- ===================================================== -->
+		<!-- SYSTEM LOGO (wird von allen CustomViews geerbt) -->
+		<!-- ===================================================== -->
+		<image name="logo">
+			<origin>0.5 0.5</origin>
+			<pos>0.075 0.06</pos>
+			<maxSize>0.125 0.12</maxSize>
+			<path>./_art/logos/${system.theme}.png</path>
+			<path>./_art/logos/${system.theme}.svg</path>
+			<zIndex>30</zIndex>
+		</image>
+
+		<image name="gridtile.favorite">
+			<path>./_inc/images/favorite.svg</path>
+			<pos>0.75 0</pos>
+			<maxSize>0.25 0.25</maxSize>
+			<horizontalAlignment>right</horizontalAlignment>
+			<origin>0 0</origin>
+			<color>ff0000</color>
+		</image>
+
+		<helpsystem name="help">
+			<fontPath>./_art/Acre.otf</fontPath>
+			<fontSize>0.02</fontSize>
+			<origin>1 1</origin>			<!--0 0-->
+			<pos>0 0</pos>			<!--0.0890 0.6283-->
+			<textColor>F8F8F8</textColor>
+			<iconColor>F8F8F8</iconColor>
+		</helpsystem>
+
+		<!-- this is the tint image overlay that provides clarity over the video BG -->
+
+		<image name="gridOverlay" extra="true">
+			<path>./_inc/assets/gridoverlay.png</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<zIndex>8</zIndex>
+		</image>
+
+		<!-- wie viele spiele angezeigt werden auf verschiedene plattformen-->
 		<imagegrid name="gamegrid">
-			<size>0.99 0.879</size>
-			<pos>0.005 0.06</pos>
-			<pos ifHelpPrompts="false">0.005 0.08</pos>	
-			<autoLayout>3 2</autoLayout>
-			<autoLayout if="{screen.ratio} == '1/1'">3 3</autoLayout>
-			<autoLayout if="{screen.ratio} == '16/9'">4 3</autoLayout>
-			<!-- <cellProportion>1.5</cellProportion> -->
+			<pos>0.04 0.19</pos>
+			<size>1.0 1.0</size>
+			<!-- Define base grid with reduced gap -->
+			<autoLayout>4 4</autoLayout>
+			<margin>0.02 0.02</margin>			<!-- Verringert den Abstand zwischen den Zellen -->
+			<scrollSound>./_inc/sound/scroll01.wav</scrollSound>
+			<autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
 		</imagegrid>
 
-		<imagegrid name="gamegrid">
-			<margin>${grid.itemspacing.px}</margin>
-			<padding>0.011 0.011 0.011 0.011</padding>
-			<animateSelection></animateSelection>
-			<showVideoAtDelay>1200</showVideoAtDelay>
-			<imageSource>image</imageSource>
-			<scrollbarColor>${secondaryColor}</scrollbarColor>
-			<scrollbarCorner>0.49</scrollbarCorner>
-			<scrollbarSize>0.005</scrollbarSize>
-			<scrollbarAlignment>right</scrollbarAlignment>
-			<autoLayoutSelectedZoom>1.04</autoLayoutSelectedZoom>
-
-		</imagegrid>
 
 		<gridtile name="default">
-			<backgroundCornerSize>0 0</backgroundCornerSize>
-			<imageColor>FFFFFFFF</imageColor>
-			<imageSizeMode>minSize</imageSizeMode>
-			<imageSizeMode if="{system.name} == 'retrobat'">maxSize</imageSizeMode>
-			<backgroundEdgeColor>${tertiaryColor}</backgroundEdgeColor>
-			<backgroundCenterColor>${tertiaryColor}</backgroundCenterColor>
-			<padding>3 3</padding>
-
-			<image name="favoriteIndicator">
-				<pos>0.8 0</pos>
-				<maxSize>0.199 0.199</maxSize>
-				<visible>{game:favorite}</visible>
-				<horizontalAlignment>right</horizontalAlignment>
-				<path>./_inc/images/favorite.svg</path>
-				<color>808080</color>
-				<storyboard event="activate">
-					<animation property="color" from="${tertiaryColor}" to="${secondaryColor}" duration="150" mode="linear"/>
-				</storyboard>
-				<storyboard event="deactivate">
-					<animation property="color" from="${secondaryColor}" to="${tertiaryColor}" duration="150" mode="linear"/>
-				</storyboard>
-			</image>
-
-			<image name="saveStateIndicator">
-				<pos>0.8 0.799</pos>
-				<maxSize>0.199 0.199</maxSize>
-				<horizontalAlignment>right</horizontalAlignment>
-				<verticalAlignment>bottom</verticalAlignment>
-				<visible>{game:hasSaveState}</visible>
-				<path>./_inc/images/SaveState.svg</path>
-				<color>${tertiaryColor}</color>
-				<storyboard event="activate">
-					<animation property="color" from="${tertiaryColor}" to="${secondaryColor}" duration="150" mode="linear"/>
-				</storyboard>
-				<storyboard event="deactivate">
-					<animation property="color" from="${secondaryColor}" to="${tertiaryColor}" duration="150" mode="linear"/>
-				</storyboard>
-			</image>
-
-
-			<image name="ArtShade" extra="true">
-				<origin>0 0</origin>
-				<pos>0 0</pos>
-				<size>1 1</size>
-				<zIndex>2</zIndex>
-				<visible>true</visible>
-				<color>000000</color>
-				<opacity>0.4</opacity>
-				<path>./_inc/images/bg_color.png</path>
-				<storyboard event="activate">
-					<animation property="opacity" from="0.4" to="0" duration="150" mode="linear"/>
-				</storyboard>
-				<storyboard event="deactivate">
-					<animation property="opacity" from="0" to="0.4" duration="150" mode="linear"/>
-				</storyboard>
-				<scale>1.005</scale>
-				<zIndex>30</zIndex>
-			</image>
+			<size>0.20 0.277777777777778</size>
+			<backgroundColor>42424200</backgroundColor>
+			<imageColor>ffffff</imageColor>
 		</gridtile>
 
 		<gridtile name="selected">
-			<backgroundEdgeColor>${secondaryColor}</backgroundEdgeColor>
-			<backgroundCenterColor>${secondaryColor}</backgroundCenterColor>
-			<imageColor>FFFFFFFF</imageColor>
+			<size>0.20 0.277777777777778</size>
+			<imageColor>ffffff</imageColor>
 		</gridtile>
-		
+
+
+		<text name="gridtile">
+			<visible>false</visible>			<!-- hides the game title from displaying underneath the grid item -->
+			<color>ffffff</color>
+			<backgroundColor>00000000</backgroundColor>
+			<fontSize>0.018</fontSize>
+			<forceUppercase>false</forceUppercase>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<alignment>center</alignment>
+		</text>
+
+		<!-- titel der spiele unter cover ausblenden in game view section-->
+		<text name="gridtile">
+			<visible>false</visible>
+		</text>
+
+
+
+
+		<text name="md_name">
+			<pos>0.9463541666666667 0.14</pos>
+			<size>0.720833333333333 0.055555555555556</size>
+			<origin>1 1</origin>
+			<alignment>right</alignment>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>ffffffff</color>
+			<zIndex>100</zIndex>
+		</text>
+
+		<text name="md_name">
+			<pos>-2 -2</pos>
+		</text>
+
+
+
+		<text name="md_publisher">
+			<pos>0.9463541666666667 0.17</pos>
+			<origin>1 1</origin>
+			<size>0.4 0.034259259259259</size>
+			<color>B3B3B3</color>
+			<fontSize>0.020</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<alignment>right</alignment>
+		</text>
+
+		<text name="md_publisher">
+			<pos>-2 -2</pos>
+		</text>
+
+		<video name="md_video">
+			<linearSmooth>true</linearSmooth>
+			<pos>0 -0.25</pos>
+			<maxSize>1 3</maxSize>
+			<zIndex>6</zIndex>
+			<origin>0 0</origin>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>			<!-- Snapshots immer aktiv -->
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<loops>10</loops>
+			<effect>none</effect>
+		</video>
+
+
 	</view>
-	
+
 </theme>

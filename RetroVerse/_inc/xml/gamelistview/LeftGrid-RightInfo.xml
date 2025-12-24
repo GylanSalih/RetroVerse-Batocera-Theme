@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<!--  LeftGrid+RightInfo layout  -->
+
+	<customView name="LeftGrid+RightInfo" inherits="grid">
+
+
+		<!-- ===================================================== -->
+		<!-- SYSTEM LOGO (statt Text oben links) -->
+		<!-- ===================================================== -->
+		<image name="logo">
+			<origin>0.5 0.5</origin>
+			<pos>0.075 0.06</pos>
+			<maxSize>0.125 0.12</maxSize>
+			<path>./_art/logos/${system.theme}.png</path>
+			<path>./_art/logos/${system.theme}.svg</path>
+			<zIndex>30</zIndex>
+		</image>
+
+		<!-- System-Text verstecken (stattdessen Logo verwenden) -->
+		<text name="nameLabel" extra="true">
+			<pos>-2 -2</pos>
+			<visible>false</visible>
+		</text>
+		<text name="sys_line1" extra="true">
+			<pos>-2 -2</pos>
+			<visible>false</visible>
+		</text>
+		<text name="sys_line2" extra="true">
+			<pos>-2 -2</pos>
+			<visible>false</visible>
+		</text>
+
+
+		<image name="md_marquee">
+			<pos>0.56927 0.54166</pos>
+			<origin>0 1</origin>
+			<maxSize>0.20 0.15</maxSize>
+			<zIndex>100</zIndex>
+		</image>
+
+
+		<text name="md_name">
+			<pos>-2 -2</pos>
+		</text>
+
+
+		<!-- spiele grid nähe abstand position -->
+		<imagegrid name="gamegrid">
+			<pos>0.0125 0.14</pos>
+			<size>0.48 0.44</size>
+
+			<!-- Layout: 5 Spalten, 2 Reihen -->
+			<autoLayout>5 2</autoLayout>
+
+			<!-- Abstand zwischen Grid-Rand und Container minimal -->
+			<margin>0.005 0.005</margin>
+
+			<!-- Abstand zwischen Bildern minimal -->
+			<padding>0.001 0.001</padding>
+		</imagegrid>
+
+
+
+
+		<!-- Meta-Data Ende -->
+
+
+		<!-- Dividers linien für trennung der Icons & Text -->
+		<image name="dividers" extra="true">
+			<origin>0 0</origin>
+			<pos>0.65 0.58</pos>
+			<size>0.2098958333333333 0.0462962962962963</size>
+			<path>./_inc/assets/dividers.svg</path>
+			<zIndex>99</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+
+
+		<!-- Spiel Genre text -->
+		<text name="md_genre">
+			<origin>0 0</origin>
+			<pos>0.56927 0.63796</pos>
+			<size>0.0625 0.03425</size>
+			<alignment>center</alignment>
+			<color>B3B3B3</color>
+			<fontSize>0.01481</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text>
+		<!-- Spiel Genre text -->
+		<image name="meta-genre" extra="true">
+			<origin>0 0</origin>
+			<pos>0.56927 0.58055</pos>
+			<size>0.0625 0.07407</size>
+			<path>./_inc/assets/meta-genre.svg</path>
+			<path>./${system.theme}/_inc/meta-genre.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+
+		<!-- spieler anzahl text -->
+		<text name="md_players">
+			<origin>0 0</origin>
+			<pos>0.67395 0.63796</pos>
+			<size>0.0625 0.03425</size>
+			<alignment>center</alignment>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text>
+		<!-- spieler anzahl Icon -->
+		<image name="meta-players" extra="true">
+			<origin>0 0</origin>
+			<pos>0.6739583333333333 0.5805555555555556</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-players.svg</path>
+			<path>./${system.theme}/_inc/meta-players.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+
+
+		<!-- Entwickler text -->
+		<text name="md_publisher">
+			<origin>0 0</origin>
+			<pos>0.77864 0.63796</pos>
+			<size>0.0625 0.03425</size>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<alignment>center</alignment>
+		</text>
+		<!-- Entwickler Bild -->
+		<image name="meta-publisher" extra="true">
+			<origin>0 0</origin>
+			<pos>0.77864 0.58055</pos>
+			<size>0.0625 0.07407</size>
+			<path>./_inc/assets/meta-publisher.svg</path>
+			<path>./${system.theme}/_inc/meta-publisher.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+
+		<!-- Datum text -->
+		<datetime name="md_releasedate">
+			<origin>0 0</origin>
+			<pos>0.88333 0.63796</pos>
+			<size>0.0625 0.03425</size>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<format>%Y</format>
+			<alignment>center</alignment>
+		</datetime>
+		<!-- Icon Datum -->
+		<image name="meta-date" extra="true">
+			<origin>0 0</origin>
+			<pos>0.88333 0.58055</pos>
+			<size>0.0625 0.07407</size>
+			<path>./_inc/assets/meta-date.svg</path>
+			<path>./${system.theme}/_inc/meta-date.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+			<alignment>center</alignment>
+		</image>
+
+
+		<!-- Herkunft text -->
+		<image name="md_flag">
+			<linearSmooth>true</linearSmooth>
+			<origin>0 1</origin>
+			<pos>0.73 0.88055</pos>
+			<size>0.05 0.03</size>
+			<zIndex>11</zIndex>			<!-- Niedriger Z-Index für Fanart -->
+			<effect>none</effect>
+		</image>
+
+
+
+
+
+		<!-- beschreibung text -->
+		<text name="md_description">
+			<color>ffffff</color>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<alignment>left</alignment>
+			<size>0.33645 0.09444</size>
+			<pos>0.569274 0.69259</pos>
+		</text>
+
+
+
+		<!-- Meta-Data Ende -->
+
+
+
+		<video name="md_video">
+			<linearSmooth>true</linearSmooth>
+			<origin>0 1</origin>
+			<pos>0.3828125 0.5981481481481481</pos>
+			<maxSize>0.6171875 2</maxSize>
+			<zIndex>9</zIndex>
+			<delay>0</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<loops>10</loops>
+			<effect>none</effect>
+			<show>{video != ""}</show>			<!-- Nur anzeigen, wenn Video vorhanden -->
+		</video>
+
+		<image name="md_image">
+			<linearSmooth>true</linearSmooth>
+			<origin>0 1</origin>
+			<pos>0.3828125 0.5981481481481481</pos>
+			<maxSize>0.6171875 2</maxSize>
+			<zIndex>8</zIndex>			<!-- Niedriger Z-Index für Fanart -->
+			<delay>0</delay>
+			<hide>{video != ""}</hide>			<!-- Versteckt das Fanart, wenn Video vorhanden -->
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<loops>10</loops>
+			<effect>none</effect>
+		</image>
+
+
+
+
+
+		<!-- bild über video weicher übergang -->
+		<image name="gridOverlay" extra="true">
+			<path>./_inc/assets/boxDetailOverlay.png</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<zIndex>10</zIndex>
+			<color>000000FF</color>			<!-- Schwarz mit voller Deckkraft -->
+		</image>
+
+
+	</customView>
+
+</theme>
+

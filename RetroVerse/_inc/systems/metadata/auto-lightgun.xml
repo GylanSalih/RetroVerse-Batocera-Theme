@@ -1,0 +1,33 @@
+<theme>
+<formatVersion>4</formatVersion>
+
+<view name="basic, detailed, video, grid">
+  <text name="nameLabel" extra="true">
+    <text>Lightgun Games</text>
+  </text>
+</view>    
+
+<view name="system">
+  <text name="sys_line1" extra="true">
+    <text>Genre</text>
+    <fontSize>0.048</fontSize>
+    <origin>0 0</origin>
+    <pos>0.12 0.142</pos>
+    <size>0 0</size>
+  </text>
+  <text name="sys_line2" extra="true">
+    <text>Lightgun</text>
+    <fontSize>0.18</fontSize>
+    <origin>0 0</origin>
+    <pos>0.12 0.16</pos>
+    <size>0 0</size>
+  </text>
+  <text name="shortdescription" extra="true">
+   <text>Collection  ·  Lightgun Games</text>
+  </text>
+  <text name="longdescription" extra="true">
+   <text>Aim and shoot with precision. Arcade-style lightgun games that test your reflexes and accuracy</text>
+  </text>
+ </view>
+</theme>
+

@@ -1,0 +1,21 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	
+	<view name="menu, system, detailed, gamecarousel, grid">
+		<helpsystem name="help">
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./_inc/icons/Buttons/xboxone/updown.png</iconUpDown>
+			<iconLeftRight>./_inc/icons/Buttons/xboxone/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./_inc/icons/Buttons/xboxone/all.png</iconUpDownLeftRight>
+			<iconA>./_inc/icons/Buttons/xboxone/a.png</iconA>
+			<iconB>./_inc/icons/Buttons/xboxone/b.png</iconB>
+			<iconX>./_inc/icons/Buttons/xboxone/x.png</iconX>
+			<iconY>./_inc/icons/Buttons/xboxone/y.png</iconY>
+			<iconL>./_inc/icons/Buttons/xboxone/l.png</iconL>
+			<iconR>./_inc/icons/Buttons/xboxone/r.png</iconR>
+			<iconStart>./_inc/icons/Buttons/xboxone/start.png</iconStart>
+			<iconSelect>./_inc/icons/Buttons/xboxone/select.png</iconSelect>
+		</helpsystem>		
+	</view>
+	
+</theme>

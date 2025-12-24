@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<!-- ========================================================= -->
+	<!-- ===================== 2Row+1Banner VIEW ======================== -->
+	<!-- ========================================================= -->
+
+	<customView name="2Row+1Banner" inherits="grid">
+
+
+		<!-- Scanlines komplett deaktivieren -->
+		<image name="scanlines" extra="true">
+			<path/>
+		</image>
+
+
+
+		<!-- System-Text verstecken (stattdessen Logo verwenden) -->
+		<text name="nameLabel" extra="true">
+			<pos>-2 -2</pos>
+			<visible>false</visible>
+		</text>
+		<text name="sys_line1" extra="true">
+			<pos>-2 -2</pos>
+			<visible>false</visible>
+		</text>
+		<text name="sys_line2" extra="true">
+			<pos>-2 -2</pos>
+			<visible>false</visible>
+		</text>
+
+		<!-- ===================================================== -->
+		<!-- GRID OVERLAY (optisches Raster / Maske über dem Grid) -->
+		<!-- ===================================================== -->
+		<image name="gridOverlay" extra="true">
+			<path>./_inc/assets/tileoverlay.png</path>
+			<size>1 1</size>
+			<pos>1 1</pos>
+			<origin>1 1</origin>
+			<zIndex>8</zIndex>
+			<color>000000FF</color>
+		</image>
+
+
+		<!-- ===================================================== -->
+		<!-- HAUPT-SPIELEGRID (Tiles / Cover-Auswahl) -->
+		<!-- ===================================================== -->
+		<imagegrid name="gamegrid">
+			<autoLayout>5 2</autoLayout>
+			<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
+			<scrollLoop>true</scrollLoop>
+			<imageSource>image</imageSource>
+			<margin>0.00625 0.011111111111111</margin>
+			<size>0.895833333333333 0.342592592592593</size>
+			<pos>0.052083333333333 0.562037037037037</pos>
+			<animateSelection>true</animateSelection>
+			<zIndex>10</zIndex>
+			<scrollSound>./_inc/sound/cursor.wav</scrollSound>
+			<showVideoAtDelay>-1</showVideoAtDelay>
+		</imagegrid>
+
+
+		<!-- ===================================================== -->
+		<!-- GRID HILFE / LEGENDE -->
+		<!-- ===================================================== -->
+		<image name="grid_help" extra="true">
+			<path>./_inc/assets/gridhelp.svg</path>
+			<origin>1 1</origin>
+			<pos>0.9463541666666667 0.5175925925925926</pos>
+			<maxSize>0.546875 0.05</maxSize>
+			<zIndex>100</zIndex>
+		</image>
+
+
+		<!-- ===================================================== -->
+		<!-- CONTROLLER BUTTONS (Select / Back) -->
+		<!-- ===================================================== -->
+		<image name="primaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<pos>0.052083333333333 0.3546481481481481</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
+
+		<!-- im game view sind da zwei kleine imgs die als text dargestellt werden einmal back und einmal select oben -->
+		<image name="selectTxt" extra="true">
+			<pos>0.052083333333333 0.4828518518518519</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/selectTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="secondaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<pos>0.091666666666667 0.3546481481481481</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
+
+		<!-- im game view sind da zwei kleine imgs die als text dargestellt werden einmal back und einmal select oben -->
+		<image name="backTxt" extra="true">
+			<pos>0.091666666666667 0.4828518518518519</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/backTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
+
+
+		<!-- ===================================================== -->
+		<!-- MEDIA BANNER (VIDEO / FALLBACK IMAGE / MARQUEE) -->
+		<!-- ===================================================== -->
+		<video name="md_video">
+			<origin>0.5 0</origin>
+			<pos>0.5 -0.15</pos>
+			<maxSize>1 3</maxSize>
+			<zIndex>6</zIndex>
+			<delay>0</delay>
+			<loops>10</loops>
+			<effect>none</effect>
+			<linearSmooth>true</linearSmooth>
+		</video>
+
+		<image name="md_image">
+			<linearSmooth>true</linearSmooth>
+			<origin>0.5 0</origin>
+			<pos>0.5 -0.15</pos>
+			<maxSize>1 3</maxSize>
+			<zIndex>5</zIndex>
+			<hide>{video != ""}</hide>
+		</image>
+
+		<image name="md_marquee">
+			<pos>0.5 0.162037037037037</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.25 0.2</maxSize>
+			<zIndex>100</zIndex>
+		</image>
+
+
+		<!-- ===================================================== -->
+		<!-- GRID TILE STYLES (Standard / Selected) -->
+		<!-- ===================================================== -->
+		<gridtile name="default">
+			<backgroundCenterColor>40404080</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+			<padding>4 4</padding>
+			<imageSizeMode>minSize</imageSizeMode>
+			<backgroundColor>42424200</backgroundColor>
+			<imageColor>6d6d6dFF</imageColor>
+		</gridtile>
+
+		<gridtile name="selected">
+			<padding>4 4</padding>
+			<imageColor>ffffffff</imageColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+		</gridtile>
+
+
+		<!-- ===================================================== -->
+		<!-- TILE MARQUEE STATES -->
+		<!-- ===================================================== -->
+		<!-- Logo über den Covers entfernt -->
+		<!-- <image name="gridtile.marquee">
+			<color>dadadaff</color>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.60 0.60</size>
+		</image>
+
+		<image name="gridtile.marquee:selected">
+			<color>FFFFFFFF</color>
+			<size>0.70 0.70</size>
+		</image>
+
+		<image name="gridtile.marquee:videoplaying">
+			<color>FFFFFFFF</color>
+			<size>0.60 0.60</size>
+		</image> -->
+
+
+		<!-- ===================================================== -->
+		<!-- METADATEN (Genre / Players / Publisher / Year) -->
+		<!-- ===================================================== -->
+		<!-- Icons + Text logisch gruppiert -->
+
+		<!-- Genre -->
+		<image name="meta-genre" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.34296875 0.4157407407407407</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-genre.svg</path>
+		</image>
+		<text name="md_genre">
+			<origin>0.5 0</origin>
+			<pos>0.34296875 0.49</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+			<color>FFFFFFFF</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text>
+
+
+		<!-- Players -->
+		<image name="meta-players" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.44765625 0.4157407407407407</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-players.svg</path>
+		</image>
+		<text name="md_players">
+			<origin>0.5 0</origin>
+			<pos>0.44765625 0.49</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+			<color>FFFFFFFF</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text>
+
+
+		<!-- Publisher -->
+		<image name="meta-publisher" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.55234375 0.4157407407407407</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-publisher.svg</path>
+		</image>
+		<text name="md_publisher">
+			<origin>0.5 0</origin>
+			<pos>0.55234375 0.49</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+			<color>FFFFFFFF</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text>
+
+
+		<!-- Release Year -->
+		<image name="meta-date" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.65703125 0.4157407407407407</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-date.svg</path>
+		</image>
+		<datetime name="md_releasedate">
+			<origin>0.5 0</origin>
+			<pos>0.65703125 0.49</pos>
+			<size>0.0625 0.034259259259259</size>
+			<format>%Y</format>
+			<alignment>center</alignment>
+			<color>FFFFFFFF</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</datetime>
+
+
+		<!-- RetroAchievements Icon -->
+		<image name="md_cheevos">
+			<origin>0.5 0</origin>
+			<pos>0.25 0.4157407407407407</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-achievements.svg</path>
+			<color>FFD700FF</color>
+			<zIndex>150</zIndex>
+		</image>
+
+
+		<!-- ===================================================== -->
+		<!-- BESCHREIBUNGSTEXT -->
+		<!-- ===================================================== -->
+		<text name="md_description">
+			<origin>0.5 0</origin>
+			<pos>0.5 0.28</pos>
+			<size>0.336458333333333 0.094444444444444</size>
+			<alignment>center</alignment>
+			<color>ffffff</color>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+		</text>
+
+	</customView>
+
+</theme>
+

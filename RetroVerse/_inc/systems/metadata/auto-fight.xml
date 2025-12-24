@@ -1,0 +1,32 @@
+<theme>
+<formatVersion>4</formatVersion>
+
+<view name="basic, detailed, video, grid">
+  <text name="nameLabel" extra="true">
+    <text>Fighting Games</text>
+  </text>
+</view>    
+
+<view name="system">
+  <text name="sys_line1" extra="true">
+    <text>Genre</text>
+    <fontSize>0.048</fontSize>
+    <origin>0 0</origin>
+    <pos>0.12 0.142</pos>
+    <size>0 0</size>
+  </text>
+  <text name="sys_line2" extra="true">
+    <text>Fighting</text>
+    <fontSize>0.18</fontSize>
+    <origin>0 0</origin>
+    <pos>0.12 0.16</pos>
+    <size>0 0</size>
+  </text>
+  <text name="shortdescription" extra="true">
+   <text>Collection  ·  Fighting Games</text>
+  </text>
+  <text name="longdescription" extra="true">
+   <text>Test your skills in one-on-one combat. From Street Fighter to Tekken, master the art of fighting</text>
+  </text>
+ </view>
+</theme>

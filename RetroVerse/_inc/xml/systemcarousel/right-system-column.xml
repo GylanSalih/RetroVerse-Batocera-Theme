@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    
+    <view name="system">
+        <!-- carousel design - Vertikale Liste/Spalte rechts -->
+        <carousel name="systemcarousel">
+            <type>vertical</type>
+            <pos>0.88 0.08</pos>
+            <size>0.11 0.86</size>
+            <logoScale>1.0</logoScale>
+            <logoSize>0.10 0.06</logoSize>
+            <color>00000000</color>
+            <logoRotation>0</logoRotation>
+            <logoRotationOrigin>0.5 0.5</logoRotationOrigin>
+            <logoAlignment>left</logoAlignment>
+            <maxLogoCount>13</maxLogoCount>
+            <defaultTransition>instant</defaultTransition>
+            <scrollDirection>vertical</scrollDirection>
+            <scrollLoop>true</scrollLoop>
+            <zIndex>75</zIndex>
+            <systemInfoDelay>0</systemInfoDelay>
+            <scrollSound>./_inc/assets/sounds/scroll1A.wav</scrollSound>
+            <image name="logo" path="./_art/logos/systemLogo.png" />
+        </carousel>
+    </view>
+</theme>

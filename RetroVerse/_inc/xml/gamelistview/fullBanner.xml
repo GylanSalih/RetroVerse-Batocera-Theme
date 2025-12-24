@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    
+    <!-- ===================================================== -->
+    <!-- SUBSET: Scroll-Richtung & Loop-Verhalten -->
+    <!-- ===================================================== -->
+    <subset name="scrollDirection" displayName="Scroll Direction">
+        <include name="horizontal" displayName="Horizontal (Left/Right)" />
+        <include name="vertical" displayName="Vertical (Up/Down)" />
+    </subset>
+    
+    <subset name="scrollLoop" displayName="Scroll Loop">
+        <include name="enabled" displayName="Endless Loop" />
+        <include name="disabled" displayName="Stop at Start/End" />
+    </subset>
+    
+    <!-- ========================================================= -->
+    <!-- ===================== fullBanner VIEW ======================== -->
+    <!-- ========================================================= -->
+    <customView name="fullBanner" inherits="grid">
+        <!-- Scanlines komplett deaktivieren -->
+        <image name="scanlines" extra="true">
+            <path/>
+        </image>
+        <!-- System-Text verstecken (stattdessen Logo verwenden) -->
+        <text name="nameLabel" extra="true">
+            <pos>-2 -2</pos>
+            <visible>false</visible>
+        </text>
+        <text name="sys_line1" extra="true">
+            <pos>-2 -2</pos>
+            <visible>false</visible>
+        </text>
+        <text name="sys_line2" extra="true">
+            <pos>-2 -2</pos>
+            <visible>false</visible>
+        </text>
+        <!-- ===================================================== -->
+        <!-- GRID OVERLAY (optisches Raster / Maske über dem Grid) -->
+        <!-- ===================================================== -->
+        <image name="gridOverlay" extra="true">
+            <path>./_inc/assets/tileoverlay.png</path>
+            <size>0.98 0.92</size>
+            <pos>0.99 0.96</pos>
+            <origin>1 1</origin>
+            <zIndex>8</zIndex>
+            <color>000000FF</color>
+        </image>
+        
+        <!-- ===================================================== -->
+        <!-- HAUPT-SPIELEGRID - HORIZONTAL SCROLL -->
+        <!-- ===================================================== -->
+        <imagegrid name="gamegrid" ifSubset="scrollDirection:horizontal">
+            <autoLayout>6 3</autoLayout>
+            <autoLayoutSelectedZoom>1.05</autoLayoutSelectedZoom>
+            <scrollDirection>horizontal</scrollDirection>
+            <scrollLoop ifSubset="scrollLoop:enabled">true</scrollLoop>
+            <scrollLoop ifSubset="scrollLoop:disabled">false</scrollLoop>
+            <imageSource>thumbnail</imageSource>
+            <margin>0.005 0.005</margin>
+            <size>0.98 0.92</size>
+            <pos>0.01 0.04</pos>
+            <animateSelection>true</animateSelection>
+            <zIndex>10</zIndex>
+            <scrollSound>./_inc/sound/cursor.wav</scrollSound>
+            <showVideoAtDelay>2000</showVideoAtDelay>
+            <scrollbarColor>FFFFFFDD</scrollbarColor>
+            <scrollbarCorner>0.49</scrollbarCorner>
+            <scrollbarSize>0.003</scrollbarSize>
+            <scrollbarAlignment>right</scrollbarAlignment>
+        </imagegrid>
+        
+        <!-- ===================================================== -->
+        <!-- HAUPT-SPIELEGRID - VERTICAL SCROLL -->
+        <!-- ===================================================== -->
+        <imagegrid name="gamegrid" ifSubset="scrollDirection:vertical">
+            <autoLayout>6 3</autoLayout>
+            <autoLayoutSelectedZoom>1.05</autoLayoutSelectedZoom>
+            <scrollDirection>vertical</scrollDirection>
+            <scrollLoop ifSubset="scrollLoop:enabled">true</scrollLoop>
+            <scrollLoop ifSubset="scrollLoop:disabled">false</scrollLoop>
+            <imageSource>thumbnail</imageSource>
+            <margin>0.005 0.005</margin>
+            <size>0.98 0.92</size>
+            <pos>0.01 0.04</pos>
+            <animateSelection>true</animateSelection>
+            <zIndex>10</zIndex>
+            <scrollSound>./_inc/sound/cursor.wav</scrollSound>
+            <showVideoAtDelay>2000</showVideoAtDelay>
+            <scrollbarColor>FFFFFFDD</scrollbarColor>
+            <scrollbarCorner>0.49</scrollbarCorner>
+            <scrollbarSize>0.003</scrollbarSize>
+            <scrollbarAlignment>right</scrollbarAlignment>
+        </imagegrid>
+        
+        <!-- ===================================================== -->
+        <!-- VIDEO IM TILE (spielt im ausgewählten Tile ab) -->
+        <!-- ===================================================== -->
+        <video name="gridtile.video">
+            <imageType>video</imageType>
+            <interpolation>linear</interpolation>
+            <pillarboxes>false</pillarboxes>
+            <pillarboxThreshold>0.85 0.90</pillarboxThreshold>
+            <delay>2.0</delay>
+            <showSnapshotNoVideo>true</showSnapshotNoVideo>
+            <showSnapshotDelay>true</showSnapshotDelay>
+        </video>
+        
+        <!-- ===================================================== -->
+        <!-- TILE MARQUEE (Logo im Tile während Video läuft) -->
+        <!-- ===================================================== -->
+        <image name="gridtile.marquee">
+            <pos>0.97 0.03</pos>
+            <origin>1 0</origin>
+            <maxSize>0.25 0.12</maxSize>
+            <color>FFFFFF00</color>
+            <zIndex>50</zIndex>
+        </image>
+
+        <image name="gridtile.marquee:videoplaying">
+            <pos>0.97 0.03</pos>
+            <origin>1 0</origin>
+            <maxSize>0.25 0.12</maxSize>
+            <color>FFFFFFFF</color>
+            <zIndex>50</zIndex>
+        </image>
+
+        <!-- ===================================================== -->
+        <!-- VIDEO/BANNER DEAKTIVIEREN -->
+        <!-- ===================================================== -->
+        <video name="md_video" extra="true">
+            <pos>-2 -2</pos>
+            <visible>false</visible>
+        </video>
+        <image name="md_image" extra="true">
+            <pos>-2 -2</pos>
+            <visible>false</visible>
+        </image>
+        
+        <!-- ===================================================== -->
+        <!-- GRID TILE STYLES (Standard / Selected) -->
+        <!-- ===================================================== -->
+        <gridtile name="default">
+            <padding>2 2</padding>
+            <imageSizeMode>maxSize</imageSizeMode>
+            <backgroundColor>42424200</backgroundColor>
+            <imageColor>6d6d6dFF</imageColor>
+        </gridtile>
+        
+        <gridtile name="selected">
+            <padding>2 2</padding>
+            <imageSizeMode>maxSize</imageSizeMode>
+            <backgroundColor>42424200</backgroundColor>
+            <imageColor>FFFFFFFF</imageColor>
+        </gridtile>
+        
+        <gridtile name="selected:videoplaying">
+            <padding>0 0</padding>
+            <imageSizeMode>maxSize</imageSizeMode>
+        </gridtile>
+
+    </customView>
+</theme>
