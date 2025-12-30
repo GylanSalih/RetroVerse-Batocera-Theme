@@ -83,11 +83,22 @@
 			<zIndex>100</zIndex>
 		</image>
 
-		<!-- im game view sind da zwei kleine imgs die als text dargestellt werden einmal back und einmal select oben -->
-		<image name="selectTxt" extra="true">
-			<pos>0.052083333333333 0.4828518518518519</pos>
-			<size>0.036458333333333 0.02037037037037</size>
-			<path>./_inc/assets/selectTxt.png</path>
+		<!-- Achievement Icon (links, statt selectTxt) - Inactive (grau, leicht transparent) -->
+		<image name="meta-achievements" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.062083333333333 0.4828518518518519</pos>
+			<maxSize>0.0375 0.025</maxSize>
+			<path>./_inc/icons/Metadata-Icons/meta-achievements.svg</path>
+			<color>404040B3</color>
+			<zIndex>100</zIndex>
+		</image>
+		<!-- Achievement Icon (dynamisch, nur wenn vorhanden) - Active (weiß) -->
+		<image name="md_cheevos">
+			<origin>0.5 0.5</origin>
+			<pos>0.062083333333333 0.4828518518518519</pos>
+			<maxSize>0.0375 0.025</maxSize>
+			<path>./_inc/icons/Metadata-Icons/meta-achievements.svg</path>
+			<color>FFFFFFFF</color>
 			<zIndex>100</zIndex>
 		</image>
 
@@ -98,11 +109,22 @@
 			<zIndex>100</zIndex>
 		</image>
 
-		<!-- im game view sind da zwei kleine imgs die als text dargestellt werden einmal back und einmal select oben -->
-		<image name="backTxt" extra="true">
-			<pos>0.091666666666667 0.4828518518518519</pos>
-			<size>0.036458333333333 0.02037037037037</size>
-			<path>./_inc/assets/backTxt.png</path>
+		<!-- Manual Icon (rechts, statt backTxt) - Inactive (grau, leicht transparent) -->
+		<image name="meta-manual" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.101666666666667 0.4828518518518519</pos>
+			<maxSize>0.025 0.025</maxSize>
+			<path>./_inc/icons/Metadata-Icons/meta-manual.svg</path>
+			<color>404040B3</color>
+			<zIndex>100</zIndex>
+		</image>
+		<!-- Manual Icon (dynamisch, nur wenn vorhanden) - Active (weiß) -->
+		<image name="md_manual">
+			<origin>0.5 0.5</origin>
+			<pos>0.101666666666667 0.4828518518518519</pos>
+			<maxSize>0.025 0.025</maxSize>
+			<path>./_inc/icons/Metadata-Icons/meta-manual.svg</path>
+			<color>FFFFFFFF</color>
 			<zIndex>100</zIndex>
 		</image>
 
@@ -157,6 +179,7 @@
 		</gridtile>
 
 
+
 		<!-- ===================================================== -->
 		<!-- TILE MARQUEE STATES -->
 		<!-- ===================================================== -->
@@ -184,12 +207,13 @@
 		<!-- ===================================================== -->
 		<!-- Icons + Text logisch gruppiert -->
 
+
 		<!-- Genre -->
 		<image name="meta-genre" extra="true">
 			<origin>0.5 0</origin>
 			<pos>0.34296875 0.4157407407407407</pos>
 			<size>0.0625 0.0740740740740741</size>
-			<path>./_inc/assets/meta-genre.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-genre.svg</path>
 		</image>
 		<text name="md_genre">
 			<origin>0.5 0</origin>
@@ -207,7 +231,7 @@
 			<origin>0.5 0</origin>
 			<pos>0.44765625 0.4157407407407407</pos>
 			<size>0.0625 0.0740740740740741</size>
-			<path>./_inc/assets/meta-players.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-players.svg</path>
 		</image>
 		<text name="md_players">
 			<origin>0.5 0</origin>
@@ -225,7 +249,7 @@
 			<origin>0.5 0</origin>
 			<pos>0.55234375 0.4157407407407407</pos>
 			<size>0.0625 0.0740740740740741</size>
-			<path>./_inc/assets/meta-publisher.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-publisher.svg</path>
 		</image>
 		<text name="md_publisher">
 			<origin>0.5 0</origin>
@@ -243,7 +267,7 @@
 			<origin>0.5 0</origin>
 			<pos>0.65703125 0.4157407407407407</pos>
 			<size>0.0625 0.0740740740740741</size>
-			<path>./_inc/assets/meta-date.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-date.svg</path>
 		</image>
 		<datetime name="md_releasedate">
 			<origin>0.5 0</origin>
@@ -257,15 +281,6 @@
 		</datetime>
 
 
-		<!-- RetroAchievements Icon -->
-		<image name="md_cheevos">
-			<origin>0.5 0</origin>
-			<pos>0.25 0.4157407407407407</pos>
-			<size>0.0625 0.0740740740740741</size>
-			<path>./_inc/assets/meta-achievements.svg</path>
-			<color>FFD700FF</color>
-			<zIndex>150</zIndex>
-		</image>
 
 
 		<!-- ===================================================== -->

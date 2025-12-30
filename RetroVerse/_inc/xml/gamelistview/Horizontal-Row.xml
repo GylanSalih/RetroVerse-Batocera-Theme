@@ -2,7 +2,9 @@
 <theme>
 	<formatVersion>7</formatVersion>
 
-	<!-- ------- Horizontal-Row layout ------------ -->
+	<!-- ===================================================== -->
+	<!-- Horizontal-Row layout -->
+	<!-- ===================================================== -->
 
 	<customView name="Horizontal-Row" inherits="grid">
 
@@ -92,8 +94,8 @@
 			<origin>0.5 0</origin>
 			<pos>0.34296875 0.8018518518518519</pos>
 			<size>0.0625 0.0740740740740741</size>
-			<path>./_inc/assets/meta-genre.svg</path>
-			<path>./${system.theme}/_inc/meta-genre.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-genre.svg</path>
+			<path>./${system.theme}/_inc/icons/Metadata-Icons/meta-genre.svg</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>99</zIndex>
 		</image>
@@ -103,7 +105,7 @@
 			<pos>0.34296875 0.8611111111111111</pos>
 			<size>0.0625 0.034259259259259</size>
 			<alignment>center</alignment>
-			<color>B3B3B3</color>
+			<color>ffffff</color>
 			<fontSize>0.014814814814815</fontSize>
 			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 		</text>
@@ -113,8 +115,8 @@
 			<origin>0.5 0</origin>
 			<pos>0.44765625 0.8018518518518519</pos>
 			<size>0.0625 0.0740740740740741</size>
-			<path>./_inc/assets/meta-players.svg</path>
-			<path>./${system.theme}/_inc/meta-players.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-players.svg</path>
+			<path>./${system.theme}/_inc/icons/Metadata-Icons/meta-players.svg</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>99</zIndex>
 		</image>
@@ -125,7 +127,7 @@
 			<pos>0.44765625 0.8611111111111111</pos>
 			<size>0.0625 0.034259259259259</size>
 			<alignment>center</alignment>
-			<color>B3B3B3</color>
+			<color>ffffff</color>
 			<fontSize>0.014814814814815</fontSize>
 			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 		</text>
@@ -135,8 +137,8 @@
 			<origin>0.5 0</origin>
 			<pos>0.55234375 0.8018518518518519</pos>
 			<size>0.0625 0.0740740740740741</size>
-			<path>./_inc/assets/meta-publisher.svg</path>
-			<path>./${system.theme}/_inc/meta-publisher.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-publisher.svg</path>
+			<path>./${system.theme}/_inc/icons/Metadata-Icons/meta-publisher.svg</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>99</zIndex>
 		</image>
@@ -146,7 +148,7 @@
 			<origin>0.5 0</origin>
 			<pos>0.55234375 0.8611111111111111</pos>
 			<size>0.0625 0.034259259259259</size>
-			<color>B3B3B3</color>
+			<color>ffffff</color>
 			<fontSize>0.014814814814815</fontSize>
 			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
@@ -157,8 +159,8 @@
 			<origin>0.5 0</origin>
 			<pos>0.65703125 0.8018518518518519</pos>
 			<size>0.0625 0.0740740740740741</size>
-			<path>./_inc/assets/meta-date.svg</path>
-			<path>./${system.theme}/_inc/meta-date.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-date.svg</path>
+			<path>./${system.theme}/_inc/icons/Metadata-Icons/meta-date.svg</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>99</zIndex>
 		</image>
@@ -168,12 +170,25 @@
 			<origin>0.5 0</origin>
 			<pos>0.65703125 0.8611111111111111</pos>
 			<size>0.0625 0.034259259259259</size>
-			<color>B3B3B3</color>
+			<color>ffffff</color>
 			<fontSize>0.014814814814815</fontSize>
 			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<format>%Y</format>
 			<alignment>center</alignment>
 		</datetime>
+
+
+		<!-- beschreibung text (maximal 3 Zeilen) -->
+		<text name="md_description">
+			<origin>0.5 0</origin>
+			<pos>0.5 0.9</pos>
+			<size>0.4 0.048</size>
+			<alignment>center</alignment>
+			<color>ffffff</color>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<lineSpacing>1.0</lineSpacing>
+		</text>
 
 
 		<image name="dividers" extra="true">

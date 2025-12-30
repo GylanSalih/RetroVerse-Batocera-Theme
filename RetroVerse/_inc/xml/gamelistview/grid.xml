@@ -29,7 +29,7 @@
 			<maxSize>0.25 0.25</maxSize>
 			<horizontalAlignment>right</horizontalAlignment>
 			<origin>0 0</origin>
-			<color>ff0000</color>
+			<color>ffffff</color>
 		</image>
 
 		<helpsystem name="help">

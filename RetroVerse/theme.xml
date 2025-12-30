@@ -203,6 +203,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<image name="poster" extra="true">
 			<path>./_art/posters/${system.theme}.jpg</path>
 			<path>./_art/posters/${system.theme}.png</path>
+			<path>./_art/posters/${system.theme}.jpeg</path>
 			<path>./_art/posters/${system.theme}.webp</path>
 			<tile>false</tile>
 			<origin>1 0</origin>

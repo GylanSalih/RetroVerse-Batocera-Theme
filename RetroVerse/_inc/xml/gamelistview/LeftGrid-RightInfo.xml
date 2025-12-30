@@ -95,8 +95,8 @@
 			<origin>0 0</origin>
 			<pos>0.56927 0.58055</pos>
 			<size>0.0625 0.07407</size>
-			<path>./_inc/assets/meta-genre.svg</path>
-			<path>./${system.theme}/_inc/meta-genre.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-genre.svg</path>
+			<path>./${system.theme}/_inc/icons/Metadata-Icons/meta-genre.svg</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>99</zIndex>
 		</image>
@@ -118,8 +118,8 @@
 			<origin>0 0</origin>
 			<pos>0.6739583333333333 0.5805555555555556</pos>
 			<size>0.0625 0.0740740740740741</size>
-			<path>./_inc/assets/meta-players.svg</path>
-			<path>./${system.theme}/_inc/meta-players.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-players.svg</path>
+			<path>./${system.theme}/_inc/icons/Metadata-Icons/meta-players.svg</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>99</zIndex>
 		</image>
@@ -142,8 +142,8 @@
 			<origin>0 0</origin>
 			<pos>0.77864 0.58055</pos>
 			<size>0.0625 0.07407</size>
-			<path>./_inc/assets/meta-publisher.svg</path>
-			<path>./${system.theme}/_inc/meta-publisher.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-publisher.svg</path>
+			<path>./${system.theme}/_inc/icons/Metadata-Icons/meta-publisher.svg</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>99</zIndex>
 		</image>
@@ -166,8 +166,8 @@
 			<origin>0 0</origin>
 			<pos>0.88333 0.58055</pos>
 			<size>0.0625 0.07407</size>
-			<path>./_inc/assets/meta-date.svg</path>
-			<path>./${system.theme}/_inc/meta-date.svg</path>
+			<path>./_inc/icons/Metadata-Icons/meta-date.svg</path>
+			<path>./${system.theme}/_inc/icons/Metadata-Icons/meta-date.svg</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>99</zIndex>
 			<alignment>center</alignment>
